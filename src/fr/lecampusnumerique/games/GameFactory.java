@@ -7,7 +7,7 @@ import fr.lecampusnumerique.games.gomoku.Gomoku;
 
 public class GameFactory {
 
-    static Game createGame(GameCollection gameCollection) {
+   public static Game createGame(GameCollection gameCollection) {
         return switch (gameCollection) {
             case GameCollection.GOMOKU -> new Gomoku();
             case GameCollection.TICTACTOE -> new TicTacToe();

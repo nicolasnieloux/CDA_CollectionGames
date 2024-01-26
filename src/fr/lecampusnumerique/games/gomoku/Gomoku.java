@@ -5,6 +5,6 @@ import fr.lecampusnumerique.games.Game;
 public class Gomoku implements Game {
     @Override
     public void start() {
-
+        System.out.println("coucou cédric");
     }
 }
