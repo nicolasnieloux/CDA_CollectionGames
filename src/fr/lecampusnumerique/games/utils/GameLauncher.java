@@ -9,19 +9,24 @@ public class GameLauncher {
     private Game game;
     private GameCollection gameCollection;
 
+    private View view = new View();
+
     public GameLauncher() {
+
+        view.displayWelcomeMessage();
         //Afficher la liste de type de jeu
-        System.out.println("Bienvenue chez Charly's Games");
         for (GameCollection gameCollection : GameCollection.values()) {
             System.out.println(gameCollection);
         }
+        //Récupère la valeur de l'utilisateur
         String inputUser = InputUser.GetInputUser();
+        //Récupère le jeu dans l'enum avec inputUser
         this.gameCollection = getGameTypeFromUserInput(inputUser);
 
     }
 
 
-    public void startGame(){
+    public void startGame() {
         game = GameFactory.createGame(gameCollection);
         game.start();
     }

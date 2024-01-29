@@ -2,7 +2,6 @@ package fr.lecampusnumerique.games;
 
 import fr.lecampusnumerique.games.connect4.Connect4;
 import fr.lecampusnumerique.games.tictactoe.TicTacToe;
-import fr.lecampusnumerique.games.Game;
 import fr.lecampusnumerique.games.gomoku.Gomoku;
 
 public class GameFactory {
